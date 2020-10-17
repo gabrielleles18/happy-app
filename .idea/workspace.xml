@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mobile/src/@types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/routes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controllers/OrphanageControllers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/OrphanageControllers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/views/orphanage_views.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/views/orphanage_views.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/CreateOrphanage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/CreateOrphanage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/OrphanagesMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/OrphanagesMap.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/create-orphanage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/create-orphanage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/orphanage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/orphanage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +30,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mobile/src/images" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\happy-app\web\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\happy-app\mobile\src\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,7 +50,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602804949968</updated>
-      <workItem from="1602804952415" duration="11696000" />
+      <workItem from="1602804952415" duration="12531000" />
+      <workItem from="1602819697617" duration="7000" />
+      <workItem from="1602890355953" duration="7875000" />
     </task>
     <servers />
   </component>
@@ -55,6 +60,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="442" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602894086082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="442" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602894086082" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1602805017444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -63,5 +72,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602810967591" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1602891883099">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602891883099" />
   </component>
 </project>
