@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobile/src/@types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/images/map-marker@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesDetails.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/pages/CreateOrphanage/OrphanageData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/pages/CreateOrphanage/SelectMapPosition.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/routes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
       <updated>1602804949968</updated>
       <workItem from="1602804952415" duration="12531000" />
       <workItem from="1602819697617" duration="7000" />
-      <workItem from="1602890355953" duration="7875000" />
+      <workItem from="1602890355953" duration="11212000" />
     </task>
     <servers />
   </component>
