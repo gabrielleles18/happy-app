@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobile/src/components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/pages/CreateOrphanage/OrphanageData.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/src/pages/CreateOrphanage/SelectMapPosition.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/src/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/pages/OrphanagesMap.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/views/images_views.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/views/images_views.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +38,10 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mobile" />
   </component>
   <component name="ProjectId" id="1iw3gKSIcnYoTnKLzEenUOS3LZx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,7 +53,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="D:\happy-app\web\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\happy-app\mobile\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -50,12 +71,24 @@
       <updated>1602804949968</updated>
       <workItem from="1602804952415" duration="12531000" />
       <workItem from="1602819697617" duration="7000" />
-      <workItem from="1602890355953" duration="11212000" />
+      <workItem from="1602890355953" duration="11691000" />
+      <workItem from="1602936566420" duration="11611000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602894086082">
@@ -66,10 +99,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602805017444" />
-    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1602810967591">
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1602949255967">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602810967591" />
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602949255967" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1602939617759">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602939617759" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1602891883099">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
