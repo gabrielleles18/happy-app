@@ -28,15 +28,17 @@ const OrphanagesMap: React.FC = () => {
         <div id="page-map">
             <aside>
                 <header>
-                    <img src={mapMarkerImg} alt="Happy"/>
+                    <Link to="/">
+                        <img src={mapMarkerImg} alt="Happy"/>
+                    </Link>
 
                     <h2>Escolha um orfanato no mapa</h2>
                     <p>Muitas crianças estão esperando a sua visita :)</p>
                 </header>
 
                 <footer>
-                    <strong>Brasília</strong>
-                    <span>Distrito Federal</span>
+                    <strong>Goiás</strong>
+                    <span>Ceres</span>
                 </footer>
             </aside>
 

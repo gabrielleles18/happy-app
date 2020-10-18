@@ -5,22 +5,27 @@ import {Link} from "react-router-dom";
 import '../styles/pages/landing.css'
 import logoImg from "../images/logo.svg";
 
-function Landing(){
+function Landing() {
     return (
         <div id="page-landing">
             <div className="content-wrapper">
-                <img src={logoImg} alt="Happy"/>
+                <div className="top-app">
+                    <img src={logoImg} alt="Happy"/>
+                    <div className="location">
+                        <strong>Goiás</strong>
+                        <span>Ceres</span>
+                    </div>
+
+                    <Link to="/" className="restricted-access">
+                        Acesso restrito
+                    </Link>
+                </div>
 
                 <main>
                     <h1>Leve felicidade para o mundo</h1>
                     <p>Visite orfanatos e mude o dia
                         de muitas crianças.</p>
                 </main>
-
-                <div className="location">
-                    <strong>Goiás</strong>
-                    <span>Ceres</span>
-                </div>
 
                 <Link to="/app" className="enter-app">
                     <FiArrowRight size={26} color="rgba(0,0,0,0.6)"/>

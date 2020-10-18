@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {FaWhatsapp} from "react-icons/fa";
-import {FiClock, FiInfo, FiArrowLeft} from "react-icons/fi";
+import {FiClock, FiInfo, FiArrowRight} from "react-icons/fi";
 import {Map, Marker, TileLayer} from "react-leaflet";
 import {useParams} from 'react-router-dom';
+
 
 import Sidebar from "../components/Sidebar";
 import '../styles/pages/orphanage.css';
@@ -13,6 +14,8 @@ interface Orphanage {
     latitude: number;
     longitude: number;
     name: string;
+    about: string;
+    whatsapp: number;
     description: string;
     instructions: string;
     opening_hours: string;
@@ -32,6 +35,9 @@ export default function Orphanage() {
     const [orphanage, setOrphanage] = useState<Orphanage>();
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
+    console.log(orphanage);
+
+
     useEffect(() => {
         api.get(`orphanage/${params.id}`).then(response => {
             setOrphanage(response.data);
@@ -49,30 +55,33 @@ export default function Orphanage() {
                 <div className="orphanage-details">
                     <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name}/>
 
-                    <div className="images">
-                        {orphanage.images.map((image, index) => {
-                            return (
-                                <button
-                                    key={image.id}
-                                    className={activeImageIndex === index ? 'active' : ''}
-                                    type="button"
-                                    onClick={() => {
-                                        setActiveImageIndex(index)
-                                    }}>
-                                    <img src={image.url}
-                                         alt={orphanage.name}/>
-                                </button>
-                            )
-                        })};
-
-                    </div>
-
                     <div className="orphanage-details-content">
                         <h1>{orphanage.name}</h1>
                         <p>
-                            {orphanage.description}
+                            {orphanage.about}
                         </p>
 
+                        <div className="images">
+                            {orphanage.images.map((image, index) => {
+                                return (
+                                    <button
+                                        key={image.id}
+                                        className={activeImageIndex === index ? 'active' : ''}
+                                        type="button"
+                                        onClick={() => {
+                                            setActiveImageIndex(index)
+                                        }}>
+                                        <img src={image.url}
+                                             alt={orphanage.name}/>
+                                    </button>
+                                )
+                            })}
+
+                            <div className="next">
+                                <FiArrowRight size={24} color="#29B6D1"/>
+                            </div>
+
+                        </div>
                         <div className="map-container">
                             <Map
                                 center={[orphanage.latitude, orphanage.longitude]}
@@ -92,7 +101,9 @@ export default function Orphanage() {
                             </Map>
 
                             <footer>
-                                <a target="_blank" rel="noopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}>Ver rotas no Google Maps</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                   href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}>Ver
+                                    rotas no Google Maps</a>
                             </footer>
                         </div>
 
@@ -122,10 +133,13 @@ export default function Orphanage() {
                             )}
                         </div>
 
-                        <button type="button" className="contact-button">
-                            <FaWhatsapp size={20} color="#FFF"/>
-                            Entrar em contato
-                        </button>
+                        {orphanage.whatsapp !== null && (
+                            <a href={`https://api.whatsapp.com/send?phone=${orphanage.whatsapp}`}
+                               target="_blank" type="button" className="contact-button">
+                                <FaWhatsapp size={20} color="#FFF"/>
+                                Entrar em contato
+                            </a>
+                        )}
                     </div>
                 </div>
             </main>

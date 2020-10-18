@@ -17,6 +17,7 @@ export default function CreateOrphanage() {
 
     const [name, setName] = useState('');
     const [about, setAbout] = useState('');
+    const [whatsapp, setWhatsapp] = useState('');
     const [instructions, setInstructions] = useState('');
     const [opening_hours, setOpeningHours] = useState('');
     const [open_on_weekends, setOpenOnWeekends] = useState(true);
@@ -55,6 +56,7 @@ export default function CreateOrphanage() {
 
         data.append('name', name);
         data.append('about', about);
+        data.append('whatsapp', whatsapp);
         data.append('latitude', String(latitude));
         data.append('longitude', String(longitude));
         data.append('instructions', instructions);
@@ -80,27 +82,33 @@ export default function CreateOrphanage() {
                     <fieldset>
                         <legend>Dados</legend>
 
-                        <Map
-                            center={[-15.3066274, -49.5999757]}
-                            style={{width: '100%', height: 280}}
-                            zoom={15}
-                            onClick={handMapClick}
-                        >
-                            <TileLayer
-                                url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
-                            />
-                            {position.latitude !== 0 && (
-                                <Marker
-                                    interactive={false}
-                                    icon={mapIcon}
-                                    position={[
-                                        position.latitude,
-                                        position.longitude
-                                    ]}
+                        <div className="map-container">
+
+                            <Map
+                                center={[-15.3066274, -49.5999757]}
+                                style={{width: '100%', height: 280}}
+                                zoom={15}
+                                onClick={handMapClick}
+                            >
+                                <TileLayer
+                                    url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                                 />
-                            )
-                            }
-                        </Map>
+                                {position.latitude !== 0 && (
+                                    <Marker
+                                        interactive={false}
+                                        icon={mapIcon}
+                                        position={[
+                                            position.latitude,
+                                            position.longitude
+                                        ]}
+                                    />
+                                )
+                                }
+                            </Map>
+                            <footer>
+                                <h3>Clique no mapa para adicionar a localização</h3>
+                            </footer>
+                        </div>
 
                         <div className="input-block">
                             <label htmlFor="name">Nome</label>
@@ -109,7 +117,12 @@ export default function CreateOrphanage() {
 
                         <div className="input-block">
                             <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
-                            <textarea id="name" maxLength={300} value={about} onChange={e => setAbout(e.target.value)}/>
+                            <textarea id="about" maxLength={300} value={about} onChange={e => setAbout(e.target.value)}/>
+                        </div>
+
+                        <div className="input-block">
+                            <label htmlFor="whatsapp">Número de Whatsapp</label>
+                            <input id="whatsapp" value={whatsapp} onChange={e => setWhatsapp(e.target.value)}/>
                         </div>
 
                         <div className="input-block">
@@ -144,7 +157,7 @@ export default function CreateOrphanage() {
                         </div>
 
                         <div className="input-block">
-                            <label htmlFor="open_on_weekends">Atende fim de semana</label>
+                            <label htmlFor="open_on_weekends">Atende fim de semana?</label>
 
                             <div className="button-select">
                                 <button
