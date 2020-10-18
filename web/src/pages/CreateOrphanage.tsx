@@ -69,9 +69,7 @@ export default function CreateOrphanage() {
 
         await api.post('orphanages', data);
 
-        alert("sucesso!!!")
-
-        history.push('/app')
+        history.push('/Inform')
     }
 
     return (

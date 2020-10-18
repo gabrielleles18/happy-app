@@ -21,25 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/mobile/src/services/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/components/Inform.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/pages/InformAction.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/styles/components/inform.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controllers/OrphanageControllers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/OrphanageControllers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/database/migrations/1602631739667-create_orphanages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/migrations/1602631739667-create_orphanages.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/models/Orphanage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Orphanage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/views/orphanage_views.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/views/orphanage_views.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/pages/CreateOrphanage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/CreateOrphanage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/Landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Landing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/OrphanagesMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/OrphanagesMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/create-orphanage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/create-orphanage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/orphanage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/orphanage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/web/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +45,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iw3gKSIcnYoTnKLzEenUOS3LZx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mobile/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearnReact/bootcamp" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -86,7 +80,7 @@
       <workItem from="1602890355953" duration="11691000" />
       <workItem from="1602936566420" duration="12238000" />
       <workItem from="1602952668958" duration="7970000" />
-      <workItem from="1602974343941" duration="4453000" />
+      <workItem from="1602974343941" duration="8904000" />
     </task>
     <servers />
   </component>
@@ -110,14 +104,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602894086082" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602983646646">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602983646646" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1602953195630">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602953195630" />
-    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1602975083273">
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1602981684550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602975083273" />
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602981684550" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1602968796447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
