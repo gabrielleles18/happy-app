@@ -3,10 +3,12 @@ import {FaWhatsapp} from "react-icons/fa";
 import {FiClock, FiInfo, FiArrowRight} from "react-icons/fi";
 import {Map, Marker, TileLayer} from "react-leaflet";
 import {useParams} from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
 
+import '../styles/pages/orphanage.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Sidebar from "../components/Sidebar";
-import '../styles/pages/orphanage.css';
 import mapIcon from "../ultis/mapIcon";
 import api from "../services/api";
 
@@ -45,7 +47,11 @@ export default function Orphanage() {
     }, [params.id]);
 
     if (!orphanage) {
-        return <p>Carregando..</p>;
+        return (
+            <div className="spinner-spinner">
+                <Spinner animation="border" variant="primary"/>
+            </div>
+        )
     }
 
     return (

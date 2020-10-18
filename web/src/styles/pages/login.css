@@ -27,6 +27,7 @@
     right: 43px;
     top: 40px;
     border-radius: 16px;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
