@@ -21,18 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/mobile/src/services/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/components/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/pages/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/styles/components/input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/styles/pages/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/components/SidebarLogin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/styles/components/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/styles/components/sidebar-login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/Landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Landing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/web/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,8 @@
       <workItem from="1602890355953" duration="11691000" />
       <workItem from="1602936566420" duration="12238000" />
       <workItem from="1602952668958" duration="7970000" />
-      <workItem from="1602974343941" duration="17310000" />
+      <workItem from="1602974343941" duration="17678000" />
+      <workItem from="1603029843958" duration="1356000" />
     </task>
     <servers />
   </component>
@@ -117,10 +116,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602993656280" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1602968796447">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1603030332761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602968796447" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1603030332761" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1602891883099">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

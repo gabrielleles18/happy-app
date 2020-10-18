@@ -4,23 +4,18 @@ import {useHistory} from "react-router-dom";
 import {Link} from 'react-router-dom';
 import Checkbox from '@material-ui/core/Checkbox';
 
-import happyimg from '../images/logo-login.svg';
 import '../styles/pages/login.css';
 
+import Button from '../components/Button';
 import Input from '../components/Input';
+import SidebarLogin from "../components/SidebarLogin";
 
 export default function Login() {
     const {goBack} = useHistory();
 
     return (
         <main className="app-login">
-            <div className="left">
-                <img src={happyimg} alt="Happy"/>
-                <div className="region">
-                    <h1>Goiás</h1>
-                    <h2>Ceres</h2>
-                </div>
-            </div>
+            <SidebarLogin/>
             <div className="right">
                 <button className="arrow" type="button" onClick={goBack}>
                     <FiArrowLeft size={24} color="#15C3D6"/>
@@ -52,6 +47,10 @@ export default function Login() {
 
                         <Link to="/" className="link">Esqueci minha senha</Link>
                     </div>
+
+                    <Button
+                        title="Enviar"
+                    />
                 </form>
             </div>
         </main>
