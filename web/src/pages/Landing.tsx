@@ -16,7 +16,7 @@ function Landing() {
                         <span>Ceres</span>
                     </div>
 
-                    <Link to="/" className="restricted-access">
+                    <Link to="/login" className="restricted-access">
                         Acesso restrito
                     </Link>
                 </div>
