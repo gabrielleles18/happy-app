@@ -32,6 +32,50 @@ export default {
         await usersRepository.save(userData);
 
         return response.status(201).json(userData);
-    }
+    },
 
+    async update(req: Request, res: Response) {
+        const usersRepository = getRepository(User);
+
+        const schema = Yup.object().shape({
+            name: Yup.string(),
+            email: Yup.string()
+                .email(),
+            oldPassword: Yup.string()
+                .min(6),
+            password: Yup.string()
+                .min(6)
+                .when('oldPassword', (oldPassword: string, field: any ) =>
+                    oldPassword ? field.required() : field,
+                ),
+            confirmPassword: Yup.string().when('password', (password: string, field: any) =>
+                password ? field.required().oneOf([Yup.ref('password')]) : field
+            )
+        });
+
+        if (!(await schema.isValid(req.body))) {
+            return res.status(400).json({error: 'Validation fails'})
+        }
+
+        const {email, oldPassword, password} = req.body;
+
+        const user = await usersRepository.find(
+            {where: {id: req.userId}}
+        );
+
+        if (email != user.email) {
+            const userExists = await usersRepository.findOne({where: {email}});
+
+            if (userExists) {
+                return res.status(400).json({error: 'User already exists'});
+            }
+        }
+
+        if (oldPassword && !(await bcrypt.compare(oldPassword, password))) {
+            return res.status(401).json({error: 'Password does not match'});
+        }
+        const {id, name, provider, avatar_id} = await user.update(req.body);
+
+        return res.json({id, name, email, provider, avatar_id})
+    }
 };

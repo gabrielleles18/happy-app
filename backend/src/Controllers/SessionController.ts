@@ -26,12 +26,8 @@ class SessionController {
 
         const {email, password} = req.body;
 
-        const userFind = await usersRepository.find({
+        const userFind = await usersRepository.findOne({
             where: {email},
-        });
-
-        const password_hash = userFind.map(user => {
-            return user.password_hash;
         });
 
 
@@ -40,21 +36,19 @@ class SessionController {
                 .json({error: 'User not found'});
         }
 
-        const passwordCheck = bcrypt.compare(password, '$2a$08$pCKLnpLOGKc4/UU92S5tae9UR5XbWT4gCNyJ4eObPtKYYPfROiJB2');
-
-        if (!passwordCheck) {
+        if (!(await bcrypt.compare(password, userFind.password_hash))) {
             return res.status(401)
                 .json({error: 'Password does not match'});
         }
 
-        // const {id, name} = user;
+        const {id, name} = userFind;
 
         return res.json({
-            // user: {
-            //     id,
-            //     name,
-            //     email,
-            // },
+            user: {
+                id,
+                name,
+                email,
+            },
             token: jwt.sign({id}, authConfig.secret, {
                 expiresIn: authConfig.expiresIn
             }),

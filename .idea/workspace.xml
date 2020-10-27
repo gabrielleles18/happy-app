@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/Controllers/SessionController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/config/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/auth.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mobile/src/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Controllers/SessionController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/SessionController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/Controllers/UsersControllers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/UsersControllers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/models/Users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/config/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/yarn.lock" afterDir="false" />
@@ -62,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearnReact/bootcamp/modulo02/gobarber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -71,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\happy-app\backend\src" />
       <recent name="D:\happy-app\mobile\src\images" />
     </key>
   </component>
@@ -88,7 +87,8 @@
       <workItem from="1602936566420" duration="12238000" />
       <workItem from="1602952668958" duration="7970000" />
       <workItem from="1602974343941" duration="17678000" />
-      <workItem from="1603029843958" duration="16422000" />
+      <workItem from="1603029843958" duration="17290000" />
+      <workItem from="1603756683162" duration="6710000" />
     </task>
     <servers />
   </component>
@@ -112,18 +112,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602894086082" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603038120258">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603756899326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603038120258" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603756899326" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1602953195630">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602953195630" />
-    <state x="592" y="185" width="585" height="534" key="find.popup" timestamp="1603048703911">
+    <state x="590" y="194" width="585" height="534" key="find.popup" timestamp="1603763542072">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="592" y="185" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603048703910" />
+    <state x="590" y="194" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603763542072" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1603048360143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
