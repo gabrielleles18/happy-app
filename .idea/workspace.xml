@@ -20,17 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="834ba18a-298f-4e70-9732-8ac0cc4cf502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/auth.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mobile/src/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controllers/SessionController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/SessionController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/Controllers/UsersControllers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controllers/UsersControllers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/config/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/Input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/pages/Landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Landing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Orphanage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/components/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/components/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/components/input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/pages/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/styles/pages/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +67,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -88,7 +95,8 @@
       <workItem from="1602952668958" duration="7970000" />
       <workItem from="1602974343941" duration="17678000" />
       <workItem from="1603029843958" duration="17290000" />
-      <workItem from="1603756683162" duration="6710000" />
+      <workItem from="1603756683162" duration="7121000" />
+      <workItem from="1604232844868" duration="10030000" />
     </task>
     <servers />
   </component>
@@ -120,10 +128,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602953195630" />
-    <state x="590" y="194" width="585" height="534" key="find.popup" timestamp="1603763542072">
+    <state x="590" y="194" width="585" height="534" key="find.popup" timestamp="1604237380931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="590" y="194" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603763542072" />
+    <state x="590" y="194" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604237380931" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1603048360143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

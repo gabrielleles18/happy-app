@@ -45,7 +45,7 @@ export default {
                 .min(6),
             password: Yup.string()
                 .min(6)
-                .when('oldPassword', (oldPassword: string, field: any ) =>
+                .when('oldPassword', (oldPassword: string, field: any) =>
                     oldPassword ? field.required() : field,
                 ),
             confirmPassword: Yup.string().when('password', (password: string, field: any) =>
@@ -62,6 +62,7 @@ export default {
         const user = await usersRepository.find(
             {where: {id: req.userId}}
         );
+
 
         if (email != user.email) {
             const userExists = await usersRepository.findOne({where: {email}});

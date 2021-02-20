@@ -18,11 +18,11 @@ routes.post('/user', UsersControllers.create)
 
 routes.post('/sessions', SessionController.store);
 
-routes.use(authMiddleware);
 
 routes.put('/user/edit', UsersControllers.update);
 routes.post('/orphanages', upload.array('images') ,OrphanageControllers.create);
 
+routes.use(authMiddleware);
 
 export default routes;
 

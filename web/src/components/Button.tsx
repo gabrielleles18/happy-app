@@ -2,9 +2,9 @@ import React from 'react'
 
 import '../styles/components/button.css';
 
-export default function Button(props: any) {
+export default function Button({title}: any) {
     return (
-        <button className="confirm-button" type="submit">{props.title}</button>
+        <button className="confirm-button" type="submit">{title}</button>
     )
 }
 

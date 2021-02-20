@@ -3,9 +3,7 @@ import {Request, Response, NextFunction} from "express";
 import authCofig from '../config/auth';
 import {promisify} from 'util';
 
-interface userId {
-    userId: number
-}
+
 
 export default async (req: Request, res: Response, next: NextFunction) => {
     const authHeader = req.headers.authorization;

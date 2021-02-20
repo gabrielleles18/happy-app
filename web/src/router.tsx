@@ -19,7 +19,7 @@ function Routes(){
                 <Route path="/orphanages/:id" component={Orphanage} />
 
                 <Route path="/inform" component={InformAction} />
-                <Route path="/login" component={Login} />
+                <Route path="/sessions" component={Login} />
             </Switch>
         </BrowserRouter>
     )

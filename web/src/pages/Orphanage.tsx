@@ -37,7 +37,7 @@ export default function Orphanage() {
     const [orphanage, setOrphanage] = useState<Orphanage>();
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-    console.log(orphanage);
+    // console.log(orphanage);
 
 
     useEffect(() => {
